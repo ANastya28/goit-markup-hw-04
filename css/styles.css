@@ -325,22 +325,30 @@ flex-basis: calc((100% - 72px) /4);
 
 .custom {
     display: flex;
+    justify-content: space-between;
 }
 
 .custom .item {
 
 }
 
-.custom .item .custom-lik {
+.custom-link {
     display: block;
-
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    padding: 0;
 }
 
 .custom-icon {
-    display: block;
     width: 104px;
     height: 56px;
+    margin: 16px 32px;
 }
+
+/* .custom-lik:hover .
+.custom-icon:hover {
+  fill: #404BBF;
+} */
 
 .portfolio {
     display: flex;
