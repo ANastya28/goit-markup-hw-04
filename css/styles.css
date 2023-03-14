@@ -25,6 +25,7 @@
     --filter-hover-backgraubd-color: #404BBF;
     --logo-footer-color:#F4F4FD;
     --footer-text-color:#E7E9FC;
+    --footer-textsec-color: #FFFFFF;
     --footer-backgraund-color:#2E2F42;
     --border-button-colorvar#E7E9FC;
     --header-bottom-color:#E7E9FC;
@@ -226,6 +227,8 @@ address {
 .button-filter:hover {
     color: var(--filter-hover-color);
     background-color: var(--filter-hover-backgraubd-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .hero {
@@ -233,6 +236,14 @@ address {
     text-align: center;
     padding-top: 188px;
     padding-bottom: 188px;
+    max-width: 1440px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero-title {
@@ -264,10 +275,17 @@ img {
     column-gap: 24px;
 }
 
-.benefits .item{
+.benefits .item {
 flex-basis: calc((100% - 72px) /4);
 }
 
+.benefits .item .section-subtitle::before {
+    display: block;
+    width: 264px;
+    height: 112px;
+    background: #F4F4FD;
+    border-radius: 4px;
+}
 
 /* 
 .benefits .item +.item {
@@ -301,6 +319,27 @@ flex-basis: calc((100% - 72px) /4);
 .we .item-descr {
     padding-top: 32px;
     padding-bottom: 32px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.custom {
+    display: flex;
+}
+
+.custom .item {
+
+}
+
+.custom .item .custom-lik {
+    display: block;
+
+}
+
+.custom-icon {
+    display: block;
+    width: 104px;
+    height: 56px;
 }
 
 .portfolio {
@@ -322,6 +361,12 @@ flex-basis: calc((100% - 72px) /4);
     border-right: 1px solid var(--border-portfolio-color);
     padding-top: 32px;
     padding-left: 16px;
+}
+
+.portfolio .link:hover,
+.portfolio .link:focus {
+    border: 1px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 /* .portfolio .item.item:nth-child(3n) {
@@ -439,6 +484,14 @@ flex-basis: calc((100% - 72px) /4);
     color: var(--footer-text-color);
     margin: 0;
 }
+
+.footer-textsec {
+    color: var(--footer-textsec-color);
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 16px;
+    }
 
 .logo-footer {
     color: var(--logo-footer-color);
